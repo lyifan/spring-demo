@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       java: corretto21
   
-  pre-build:
+  pre_build:
     commands:
         - echo Pre build starts at `date`
   
@@ -15,6 +15,6 @@ phases:
       - mvn -B verify --file pom.xml
       - echo "Completed maven build successfully!"
       
-  post-build:
+  post_build:
     commands:
        - echo "Creating Docker image
