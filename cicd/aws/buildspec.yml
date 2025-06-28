@@ -6,8 +6,9 @@ phases:
       java: corretto21
   
   pre-build:
-    - echo "Pre build commands....."
-    - echo "aws cli verion: $(aws --version)"
+    commands:
+        - echo "Pre build commands....."
+        - echo "aws cli verion: $(aws --version)"
   
   build:
     commands:
