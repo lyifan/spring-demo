@@ -8,7 +8,7 @@ phases:
   pre_build:
     commands:
         - echo Pre build starts at `date`
-        - echo `aws --version`
+        - aws --version
         - echo "Region: $AWS_DEFAULT_REGION, Account: $AWS_ACCOUNT_ID"
         - echo "Docker tag: $IMAGE_REPO_NAME:$IMAGE_TAG"
   
