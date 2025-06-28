@@ -9,6 +9,7 @@ phases:
     commands:
         - echo Pre build starts at `date`
         - aws --version
+        - echo Region: $AWS_REGION
   
   build:
     commands:
