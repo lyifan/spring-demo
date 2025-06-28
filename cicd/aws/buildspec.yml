@@ -8,6 +8,7 @@ phases:
   pre_build:
     commands:
         - echo Pre build starts at `date`
+        - echo `aws --version`
   
   build:
     commands:
