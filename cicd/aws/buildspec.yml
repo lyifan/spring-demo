@@ -8,7 +8,7 @@ phases:
   pre-build:
     commands:
         - echo "Pre build commands....."
-        - echo "aws cli verion: $(aws --version)"
+        - echo "aws cli verion: `aws --version`"
   
   build:
     commands:
