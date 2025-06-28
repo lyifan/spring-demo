@@ -17,4 +17,4 @@ phases:
       
   post_build:
     commands:
-       - echo "Creating Docker image
+       - echo Creating Docker image
