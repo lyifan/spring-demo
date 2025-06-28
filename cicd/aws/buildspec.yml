@@ -7,12 +7,11 @@ phases:
   
   pre-build:
     commands:
-        - echo "Pre build commands....."
-        - echo "aws cli verion: `aws --version`"
+        - echo Pre build starts at `date`
   
   build:
     commands:
-      - echo "Starting maven build on `date`"
+      - echo "Starting maven build on `date`
       - mvn -B verify --file pom.xml
       - echo "Completed maven build successfully!"
       
